@@ -2,6 +2,7 @@
 
 :root {
     --primary-blue: #2170B8;
+    --alt-blue: #7FACFF;
     --primary-cream: #F1F7ED;
     --light-green: #E3F1EB;
     --dark-green: #91C7B1;
@@ -42,6 +43,10 @@ p {
 
 div.content {
     padding: 6vw 2vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 img.divider {
@@ -216,12 +221,6 @@ div.head-spacer {
     background-color: var(--dark-gray);
 }
 
-.about .content {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-}
-
 .about .content img {
     width: 30%;
     margin: auto 7% auto 4%;
@@ -237,18 +236,11 @@ div.head-spacer {
     background: var(--dark-green);
 }
 
-.development .content {
-    color: var(--dark-gray);
-    display: flex;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .development .text-container {
     margin: auto;
     margin-right: 0;
     width: 40%;
+    color: var(--dark-gray);
 }
 
 .development .illustration {
@@ -273,4 +265,29 @@ div.head-spacer {
 .development .illustration img {
     width: 100%;
     position: relative;
+}
+
+.curses {
+    background-color: var(--alt-blue);
+}
+
+.curses .logos {
+    max-width: 30%;
+    margin: auto 15% auto 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 2.5vw;
+    align-items: center;
+}
+
+.curses .logos img {
+    width: 100%;
+}
+
+.curses .text-container {
+    margin: auto;
+    margin-left: 0;
+    width: 40%;
+    color: var(--dark-gray);
 }
