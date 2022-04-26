@@ -291,3 +291,55 @@ div.head-spacer {
     width: 40%;
     color: var(--dark-gray);
 }
+
+.team {
+    background-color: var(--primary-cream);
+}
+
+.team .content {
+    position: relative;
+    padding-top: 15vh;
+    display: block;
+    text-align: center;
+}
+
+.team .members {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-gap: 2.5vw;
+    align-items: center;
+}
+
+.team .members h2,
+.team .member .bio {
+    position: absolute;
+    top: 2.5vw;
+    left: 15%;
+    width: 70%;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.team .members:not(:hover) h2 {
+    opacity: 1;
+}
+
+.team .members:hover h2 {
+    opacity: 0;
+}
+
+.team .member .name {
+    margin: 0;
+}
+
+.team .member .bio {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.team .member:hover .bio {
+    opacity: 1;
+}
