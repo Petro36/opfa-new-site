@@ -40,6 +40,18 @@ p {
     font-size: 18px;
 }
 
+div.content {
+    padding: 6vw 2vw;
+}
+
+img.divider {
+    width: 100%;
+}
+
+div.head-spacer {
+    margin-top: 2vw;
+}
+
 .navbar {
     padding: 10px 20px;
     display: flex;
@@ -71,7 +83,7 @@ p {
 
 .landing {
     width: 95%;
-    margin: 20px auto 70px;
+    margin: 2.5vw auto 6vw;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -199,18 +211,6 @@ p {
 
 }
 
-.custom-shape-divider-top-1650634503 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 27px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1650634503 .shape-fill {
-    fill: #FFFCF9;
-}
-
 .about {
     width: 100%;
     background-color: var(--dark-gray);
@@ -219,36 +219,18 @@ p {
 .about .content {
     display: flex;
     align-items: center;
-    padding: 50px 0;
     box-sizing: border-box;
 }
 
-.about img {
+.about .content img {
     width: 30%;
-    margin: auto 7% auto 5%;
+    margin: auto 7% auto 4%;
 }
 
 .about .text-container {
     color: var(--primary-cream);
     width: 40%;
-    margin: auto auto auto 0;
-}
-
-.custom-shape-divider-top-1650632682 {
-    width: 100%;
-    overflow: hidden;
-}
-
-.custom-shape-divider-top-1650632682 svg {
-    position: relative;
-    display: block;
-    width: calc(192% + 1.3px);
-    height: 49px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1650632682 .shape-fill {
-    fill: #403D39;
+    margin: auto;
 }
 
 .development {
@@ -260,13 +242,18 @@ p {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 50px;
     box-sizing: border-box;
 }
 
+.development .text-container {
+    margin: auto;
+    margin-right: 0;
+    width: 40%;
+}
+
 .development .illustration {
-    width: 50%;
-    margin: auto 5%;
+    max-width: 30%;
+    margin: auto 5% auto 9%;
     position: relative;
 }
 
