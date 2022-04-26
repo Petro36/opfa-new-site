@@ -331,8 +331,20 @@ div.head-spacer {
     opacity: 0;
 }
 
+.team .member img {
+    transition: 1s ease-in-out;
+}
+
+.team .member:hover img {
+    transform: rotate(-10deg);
+}
+
 .team .member .name {
     margin: 0;
+}
+
+.team .member:hover .name {
+    font-weight: bold;
 }
 
 .team .member .bio {
