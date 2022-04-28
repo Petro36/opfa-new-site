@@ -309,7 +309,6 @@ div.head-spacer {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
-    grid-gap: 2.5vw;
     align-items: center;
 }
 
@@ -331,6 +330,20 @@ div.head-spacer {
     opacity: 0;
 }
 
+.team .members:not(:hover) .member,
+.team .members:hover .member:hover {
+    opacity: 1;
+}
+
+.team .members:hover .member:not(:hover) {
+    opacity: 0.5;
+}
+
+.team .member {
+    padding: 1vh 1vw;
+}
+
+.team .member,
 .team .member img {
     transition: 1s ease-in-out;
 }
@@ -343,13 +356,14 @@ div.head-spacer {
     margin: 0;
 }
 
-.team .member:hover .name {
-    font-weight: bold;
+.team .members h2,
+.team .member .bio {
+    pointer-events: none;
 }
 
 .team .member .bio {
+    font-style: italic;
     opacity: 0;
-    pointer-events: none;
 }
 
 .team .member:hover .bio {
